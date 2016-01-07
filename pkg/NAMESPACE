@@ -1,0 +1,11 @@
+#useDynLib(BayesTree)
+
+#export(bart,pdbart,pd2bart,plot.bart,makeind,surv.pre.bart,surv.bart,mc.surv.bart)
+
+#importFrom(nnet,class.ind)
+
+#S3method(plot, bart)
+#S3method(plot, pdbart)
+#S3method(plot, pd2bart)
+
+export(surv.pre.bart,surv.bart,mc.surv.bart)

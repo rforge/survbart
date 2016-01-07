@@ -1,0 +1,16 @@
+Package: survbart
+Version: 1.0
+Depends: parallel, BayesTree
+Date: 2016-01-07
+Title: Survival analysis with BART
+Author: Rodney Sparapani <rsparapa@mcw.edu>
+Maintainer: Rodney Sparapani <rsparapa@mcw.edu> 
+Description: Bayesian Additive Regression Trees (BART) have been shown to provide flexible
+	nonparametric modeling of covariates to binary and continuous outcomes.  This R package
+        extends BART to time-to-event outcomes with right censoring.
+License: GPL (>= 2)
+URL: http://r-forge.r-project.org/projects/survbart
+Packaged: 2016-01-07
+Repository: r-forge
+Date/Publication: 2016-01-07
+NeedsCompilation: no
