@@ -252,10 +252,15 @@ times <- lung[group, 2]   ##lung$time
 delta <- lung[group, 3]-1 ##lung$status: 1=censored, 2=dead
                           ##delta: 0=censored, 1=dead
 
+## this study reports time in days rather than months like other studies
+## coarsening from days to months will reduce the computational burden
+times <- ceiling(times/30)
+
 summary(times)
 table(delta)
 
 x.train <- as.matrix(lung[group, c(4, 5, 7)]) ## matrix of observed covariates
+
 ## lung$age:        Age in years
 ## lung$sex:        Male=1 Female=2
 ## lung$ph.karno:   Karnofsky performance score (dead=0:normal=100:by=10)
